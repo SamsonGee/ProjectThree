@@ -80,9 +80,9 @@ var confirmRequirements = function() {
       }
     if (passwordLength < characters.length) {
       characters.length = passwordLength;
-      //this randomizes the array
-      characters.sort (() =>Math.random() -.5);
     }
+    //this randomizes the array
+    characters.sort (() =>Math.random() -.5);
     // send variable to generatePassword function
     return characters;
   }
